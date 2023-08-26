@@ -1,9 +1,9 @@
 const NoResults = () => {
-    return(
-        <div className="flex items-center justify-center f-full w-full text-neutral">
-            No Results Found
-        </div>
-    )
+  return (
+    <div className="f-full text-neutral flex w-full items-center justify-center">
+      No Results Found
+    </div>
+  )
 }
 
-export default NoResults;
+export default NoResults

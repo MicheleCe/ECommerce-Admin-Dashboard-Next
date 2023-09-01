@@ -2,6 +2,7 @@ import getCategory from '@/actions/get-category'
 import getColors from '@/actions/get-colors'
 import getProducts from '@/actions/get-products'
 import getSizes from '@/actions/get-sizes'
+
 import Billboard from '@/app/components/ui/billboard'
 import Container from '@/app/components/ui/container'
 import NoResults from '@/app/components/ui/no-results'
@@ -30,7 +31,6 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
     colorId: searchParams.colorId,
     sizeId: searchParams.sizeId,
   })
-
   const sizes = await getSizes()
   const colors = await getColors()
   const category = await getCategory(params.categoryId)
